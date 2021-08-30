@@ -1,0 +1,24 @@
+{
+    "asn": "",
+    "name": "",
+    "hostname": "",
+    "cloud": "",
+    "region": "",
+    "public_ips": {
+        "v4": "",
+        "v6": ""
+    },
+    "dn42_ips": {
+        "v4": "172.23.110.65",
+        "v6": "fe80::65:1"
+    },
+    "wg": {
+        "private_key": "",
+        "public_key": ""
+    },
+
+    "output": {
+        "wg": "/etc/wireguard/",
+        "bird": "/etc/bird/peers/"
+    }
+}
