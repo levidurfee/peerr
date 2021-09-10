@@ -143,6 +143,7 @@ func (n *Node) Bird() {
 	cfg = strings.Replace(cfg, "{{ip}}", n.Peer.DN42IPs.V6, 1)
 	cfg = strings.Replace(cfg, "{{asn}}", n.Peer.ASN, 1)
 	cfg = strings.Replace(cfg, "{{interface}}", n.Peer.Name, 1)
+	cfg = strings.Replace(cfg, "{{description}}", n.Peer.Comment, 1)
 
 	brd, _ := os.Create(n.Output.Bird + "/" + n.Peer.Name + ".conf")
 	defer brd.Close()
